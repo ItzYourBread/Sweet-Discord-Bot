@@ -10,7 +10,7 @@ Sweet is was a public Discord bot but now is shutdown for a technical problem an
 - [NotRealArif](https://github.com/NotRealArif)(Sweet Founder)
 - [Luxxy](https://github.com/Luxxy-GF)(Hosting Owner)
 
-- Sweet Development And Hosting Team
+- Sweet Development And Hosting Team.
 ---
 
 ## Usage
