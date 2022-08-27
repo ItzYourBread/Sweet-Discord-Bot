@@ -1,0 +1,35 @@
+const { MessageEmbed } = require("discord.js");
+const Discord = require('discord.js');
+
+module.exports = {
+    name: "top",
+    category: "rankings",
+    description: "Top users or servers",
+    options: [{
+    name: 'servers',
+    description: 'view Sweet top servers',
+    type: 'SUB_COMMAND',
+ }],
+    run: async (client, interaction, args) => {
+    
+    if (interaction.options.getSubcommand() === "servers") {
+     
+     await interaction.reply({content: "Loading..."})
+        
+     const guildstotal = await client.shard.fetchClientValues('client.guilds.cache.sort')
+     
+     const guilds = guildstotal((a, b) => b.memberCount - a.memberCount).first(10)
+  const description = guilds.map((guild, index) => {
+    return `${index+1}) ${guild.name} -> ${guild.memberCount} members -> ${guild.id}`
+  }).join('\n')
+
+  const embed = new Discord.MessageEmbed()
+  .setAuthor("S:\\client\\commands\\rankings\\top\\servers")
+  .setTitle(`Top Servers are using Sweet`)
+  .setDescription(description)
+  .setColor(client.config.embedColor)
+
+  interaction.editReply({ content: `\ `, embeds: [embed] });
+       }
+    }
+}
