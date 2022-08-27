@@ -8,9 +8,10 @@ Sweet is a another multipurpose, it's have images, giveaways, moderation, utlilt
 Sweet is was a public Discord bot but now is shutdown for a technical problem and no longer available in Discord App
 
 - [NotRealArif](https://github.com/NotRealArif)(Sweet Founder)
-- [Luxxy](https://github.com/Luxxy-GF)(Hosting owner)
+- [Luxxy](https://github.com/Luxxy-GF)(Hosting Owner)
 
 - Sweet Development And Hosting Team
+---
 
 ## Usage
 ### Commands  
