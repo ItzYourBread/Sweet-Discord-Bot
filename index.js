@@ -55,9 +55,6 @@ client.config = require('./config');
 handler.loadEvents(client);
 handler.loadSlashCommands(client);
 
-// website
-require('./server.js');
-
 // Error Handling
 
 process.on("uncaughtException", (err) => {
