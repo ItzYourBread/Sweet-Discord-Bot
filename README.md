@@ -1,7 +1,7 @@
 
 ## [Sweet](https://discord.gg/K4jgjyxb)
 
-Sweet is a another multipurpose, it's have images, giveaways, moderation, utlilties, fun and many more!
+Sweet is a another multipurpose, it's have images, giveaways, moderation, utlilties, premium system and many more!
 
 ## Note:
 
