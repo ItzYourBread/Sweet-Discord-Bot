@@ -27,13 +27,10 @@ const Discord = require('discord.js');
 const Ascii = require('ascii-table');
 
 // Connect to the database
-    mongoose.connect(config.MongoURL, {
-        keepAlive: true,
-        useCreateIndex: true,
+    mongoose.connect(config.MongoDB, {
         useNewUrlParser: true,
-        useUnifiedTopology: true,
-        autoIndex: false,
-        useFindAndModify: false,
+        keepAlive: true,
+        useUnifiedTopology: true
     }).then(() => {
         console.log(`MongoDB Database conected to the server.`)
     }).catch((err) => {
