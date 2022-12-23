@@ -71,7 +71,7 @@ const loadSlashCommands = async function (client) {
         //    .commands.set(slash);
 
         // Register Slash Commands for all the guilds
-        await client.application.commands.set([]);
+        await client.application.commands.set(slash]);
     });
 };
 
