@@ -1,1 +1,33 @@
-[{"messageId":"979298673190137856","channelId":"976851613807415337","guildId":"976805504372310036","startAt":1653553394345,"endAt":1653556994346,"ended":true,"winnerCount":2,"prize":"hello","messages":{"giveaway":"<:sweet:973572889729179668>**GIVEAWAY**<:sweet:973572889729179668>","giveawayEnded":"<:sweet:973572889729179668>**GIVEAWAY ENDED**<:sweet:973572889729179668>","inviteToParticipate":"React with 🎉 to participate!","winMessage":"Congratulations, {winners}! You won **{this.prize}**!\n{this.messageURL}","drawing":"Ends: **{timestamp}**","dropMessage":"Be the first to react with 🎉 !","embedFooter":"{this.winnerCount} winner(s)","noWinner":"Giveaway cancelled, no valid participations.","winners":"winner(s)","endedAt":"Ended at","hostedBy":"Hosted by: {this.hostedBy}","units":{"seconds":"seconds","minutes":"minutes","hours":"hours","days":"days","pluralS":false}},"hostedBy":"<@602101253178392576>"}]
+[
+    {
+        "messageId": "979298673190137856",
+        "channelId": "976851613807415337",
+        "guildId": "976805504372310036",
+        "startAt": 1653553394345,
+        "endAt": 1653556994346,
+        "ended": true,
+        "winnerCount": 2,
+        "prize": "hello",
+        "messages": {
+            "giveaway": "<:sweet:973572889729179668>**GIVEAWAY**<:sweet:973572889729179668>",
+            "giveawayEnded": "<:sweet:973572889729179668>**GIVEAWAY ENDED**<:sweet:973572889729179668>",
+            "inviteToParticipate": "React with 🎉 to participate!",
+            "winMessage": "Congratulations, {winners}! You won **{this.prize}**!\n{this.messageURL}",
+            "drawing": "Ends: **{timestamp}**",
+            "dropMessage": "Be the first to react with 🎉 !",
+            "embedFooter": "{this.winnerCount} winner(s)",
+            "noWinner": "Giveaway cancelled, no valid participations.",
+            "winners": "winner(s)",
+            "endedAt": "Ended at",
+            "hostedBy": "Hosted by: {this.hostedBy}",
+            "units": {
+                "seconds": "seconds",
+                "minutes": "minutes",
+                "hours": "hours",
+                "days": "days",
+                "pluralS": false
+            }
+        },
+        "hostedBy": "<@602101253178392576>"
+    }
+]

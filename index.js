@@ -1,6 +1,6 @@
 const { Client, Collection, Intents } = require('discord.js');
-const handler = require("./handlers/index");
-const fs = require("fs");
+const handler = require('./handlers/index');
+const fs = require('fs');
 
 const client = new Client({
     intents: [
@@ -27,18 +27,21 @@ const Discord = require('discord.js');
 const Ascii = require('ascii-table');
 
 // Connect to the database
-    mongoose.connect(config.MongoURL, {
+/* mongoose
+    .connect(config.MongoURL, {
         useNewUrlParser: true,
         keepAlive: true,
-        useUnifiedTopology: true
-    }).then(() => {
-        console.log(`MongoDB Database conected to the server.`)
-    }).catch((err) => {
-        console.log(`Unable to connect to MongoDB Database.\nError: ` + err )
+        useUnifiedTopology: true,
     })
+    .then(() => {
+        console.log(`MongoDB Database conected to the server.`);
+    })
+    .catch((err) => {
+        console.log(`Unable to connect to MongoDB Database.\nError: ` + err);
+    }); */
 
 // Call .env file to get Token
-require('dotenv').config()
+require('dotenv').config();
 
 module.exports = client;
 
@@ -54,20 +57,31 @@ handler.loadSlashCommands(client);
 
 // Error Handling
 
-process.on("uncaughtException", (err) => {
-    console.log("Uncaught Exception: " + err);
-});
-  
-process.on("unhandledRejection", (reason, promise) => {
-    console.log("[FATAL] Possibly Unhandled Rejection at: Promise ", promise, " reason: ", reason.message);
-});
-process.on('uncaughtExceptionMonitor', (err, origin) => {
-    console.log(' [Error_Handling] :: Uncaught Exception/Catch (MONITOR)' + err);
-});
-process.on('multipleResolves', (type, promise, reason) => {
-    console.log(' [Error_Handling] :: Multiple Resolves', promise, " reason: ", reason.message);
+process.on('uncaughtException', (err) => {
+    console.log('Uncaught Exception: ' + err);
 });
 
+process.on('unhandledRejection', (reason, promise) => {
+    console.log(
+        '[FATAL] Possibly Unhandled Rejection at: Promise ',
+        promise,
+        ' reason: ',
+        reason.message
+    );
+});
+process.on('uncaughtExceptionMonitor', (err, origin) => {
+    console.log(
+        ' [Error_Handling] :: Uncaught Exception/Catch (MONITOR)' + err
+    );
+});
+process.on('multipleResolves', (type, promise, reason) => {
+    console.log(
+        ' [Error_Handling] :: Multiple Resolves',
+        promise,
+        ' reason: ',
+        reason.message
+    );
+});
 
 // Login Discord Bot Token
 client.login(process.env.TOKEN);

@@ -8,8 +8,8 @@ let manager = new ShardingManager('./index.js', {
     // execArgv: ['--inspect']
 });
 
-manager.on('shardCreate', shard => {
+manager.on('shardCreate', (shard) => {
     console.log(`[Shard ${shard.id + 1}] Ready!`);
-})
+});
 
 manager.spawn();

@@ -1,6 +1,6 @@
 {
     "milk": [
-  "https://images.pexels.com/photos/236010/pexels-photo-236010.jpeg?cs=srgb&dl=pexels-pixabay-236010.jpg&fm=jpg",
+        "https://images.pexels.com/photos/236010/pexels-photo-236010.jpeg?cs=srgb&dl=pexels-pixabay-236010.jpg&fm=jpg",
         "https://images.pexels.com/photos/799273/pexels-photo-799273.jpeg?cs=srgb&dl=pexels-george-desipris-799273.jpg&fm=jpg",
         "https://images.pexels.com/photos/2064356/pexels-photo-2064356.jpeg?cs=srgb&dl=pexels-adonyi-g%C3%A1bor-2064356.jpg&fm=jpg",
         "https://images.pexels.com/photos/1675976/pexels-photo-1675976.jpeg?cs=srgb&dl=pexels-f%C3%A1-romero-1675976.jpg&fm=jpg",
@@ -19,5 +19,5 @@
         "https://unsplash.com/photos/-hAvXEvW9Y0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjExfHxtaWxrfGVufDB8fHx8MTY1MzI4NjI2Mw&force=true",
         "https://unsplash.com/photos/6_b73NNVieM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjEyfHxtaWxrfGVufDB8fHx8MTY1MzI4NjI2Mw&force=true",
         "https://unsplash.com/photos/FGIixm4dFTE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjMxfHxtaWxrfGVufDB8fHx8MTY1MzI4NjU4OA&force=true"
-   ]
+    ]
 }

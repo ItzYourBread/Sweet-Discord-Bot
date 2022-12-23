@@ -1,36 +1,40 @@
-const Discord = require("discord.js");
+const Discord = require('discord.js');
 const cuddles = require('../../database/actions/cuddle.json');
 
 module.exports = {
-    name: "cuddle",
+    name: 'cuddle',
     usage: '/cuddle <user>',
-    category: "Actions",
-    description: "cuddle your crush!",
-    options: [{
-        name: "user",
-        description: "Select a user.",
-        type: "USER",
-        required: true
-    }, ],
-  
+    category: 'Actions',
+    description: 'cuddle your crush!',
+    options: [
+        {
+            name: 'user',
+            description: 'Select a user.',
+            type: 'USER',
+            required: true,
+        },
+    ],
+
     run: async (client, interaction) => {
-      
-      const Target = interaction.options.getUser('user') || interaction.user;
-        
-      if (Target.id === interaction.member.id) return interaction.reply({
-            content: `ARE YOU SURE? YOU CANNOT CUDDLE YOURSELF! >.<`
-        });
-      
-      let cuddle = cuddles.cuddle[Math.floor((Math.random() * cuddles.cuddle.length))];
+        const Target = interaction.options.getUser('user') || interaction.user;
 
-      const embed = new Discord.MessageEmbed()
+        if (Target.id === interaction.member.id)
+            return interaction.reply({
+                content: `ARE YOU SURE? YOU CANNOT CUDDLE YOURSELF! >.<`,
+            });
 
-        
-.setFooter(`${interaction.user.username} cuddled ${Target.username}! aww....`)
-			.setColor(client.config.embedColor)
-			.setImage(`${cuddle}`)
-      .setAuthor("S:\\client\\commands\\actions\\cuddle")
+        let cuddle =
+            cuddles.cuddle[Math.floor(Math.random() * cuddles.cuddle.length)];
 
-		interaction.reply({ embeds: [embed] });
+        const embed = new Discord.MessageEmbed()
+
+            .setFooter(
+                `${interaction.user.username} cuddled ${Target.username}! aww....`
+            )
+            .setColor(client.config.embedColor)
+            .setImage(`${cuddle}`)
+            .setAuthor('S:\\client\\commands\\actions\\cuddle');
+
+        interaction.reply({ embeds: [embed] });
     },
 };
